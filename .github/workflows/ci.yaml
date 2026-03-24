@@ -20,8 +20,25 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
 
+  test:
+    name: Test (Node.js ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22, 24]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v3
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - run: pnpm install
+      - run: pnpm build
+      - run: pnpm test
+
   actions-timeline:
-    needs: [lint]
+    needs: [lint, test]
     runs-on: ubuntu-latest
     if: ${{ !cancelled() }}
     steps:

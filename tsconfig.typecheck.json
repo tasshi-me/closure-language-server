@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.cache/typescript/tsconfig.typecheck.tsbuildinfo",
+    "rootDir": "."
+  },
+  "include": ["src", "*.config.ts"]
+}
