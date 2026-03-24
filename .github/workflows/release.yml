@@ -18,6 +18,7 @@ jobs:
       - uses: googleapis/release-please-action@v4
         id: release
 
+  # https://github.com/googleapis/release-please-action/#automating-publication-to-npm
   publish:
     name: Publish
     permissions:
@@ -33,12 +34,15 @@ jobs:
         with:
           node-version-file: ".node-version"
           cache: "pnpm"
-          registry-url: "https://registry.npmjs.org"
-      - run: npm install -g npm@latest
       - run: pnpm install
+      - name: Configure npm user
+        run: npm config set "//registry.npmjs.org/:_authToken=${NPM_TOKEN}"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: pnpm build
       - run: pnpm publish --access public
         env:
+          # https://docs.npmjs.com/generating-provenance-statements#using-third-party-package-publishing-tools
           NPM_CONFIG_PROVENANCE: true
 
   actions-timeline:
