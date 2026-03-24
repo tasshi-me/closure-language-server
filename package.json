@@ -1,0 +1,67 @@
+{
+  "name": "closure-language-server",
+  "version": "0.0.1",
+  "description": "A Language Server for Google Closure Tools",
+  "author": {
+    "name": "tasshi (Masaharu Tashiro)",
+    "email": "tasshi.me@gmail.com",
+    "url": "https://tasshi.me/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "closure",
+    "closure-compiler",
+    "closure-library",
+    "google-closure",
+    "javascript",
+    "language-server",
+    "lsp"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": "./dist/server.js",
+  "main": "./dist/server.js",
+  "bin": {
+    "closure-language-server": "./dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasshi-me/closure-language-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tasshi-me/closure-language-server/issues"
+  },
+  "homepage": "https://github.com/tasshi-me/closure-language-server#readme",
+  "scripts": {
+    "build": "tsc --build",
+    "fix": "pnpm fix:eslint && pnpm fix:prettier",
+    "fix:eslint": "eslint . --fix",
+    "fix:prettier": "prettier --write .",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:eslint": "eslint . --max-warnings 0",
+    "lint:prettier": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsc --build --watch"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-package-json": "^0.91.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  },
+  "packageManager": "pnpm@10.30.3"
+}
