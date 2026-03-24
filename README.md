@@ -1,5 +1,6 @@
 # closure-language-server
 
+[![CI](https://github.com/tasshi-me/closure-language-server/actions/workflows/ci.yaml/badge.svg)](https://github.com/tasshi-me/closure-language-server/actions/workflows/ci.yaml)
 [![npm version](https://img.shields.io/npm/v/closure-language-server.svg)](https://www.npmjs.com/package/closure-language-server)
 [![license](https://img.shields.io/npm/l/closure-language-server.svg)](https://github.com/tasshi-me/closure-language-server/blob/main/LICENSE)
 
