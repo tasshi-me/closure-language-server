@@ -25,7 +25,7 @@ importers:
         specifier: ^9.39.4
         version: 9.39.4
       eslint-config-prettier:
-        specifier: ^10.1.1
+        specifier: ^10.1.8
         version: 10.1.8(eslint@9.39.4)
       eslint-plugin-package-json:
         specifier: ^0.91.0

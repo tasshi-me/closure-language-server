@@ -59,7 +59,7 @@
     "@eslint/js": "^9.39.4",
     "@types/node": "^22.19.15",
     "eslint": "^9.39.4",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-package-json": "^0.91.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
