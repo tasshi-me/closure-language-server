@@ -22,7 +22,7 @@ importers:
         specifier: ^22.19.15
         version: 22.19.15
       eslint:
-        specifier: ^9.21.0
+        specifier: ^9.39.4
         version: 9.39.4
       eslint-config-prettier:
         specifier: ^10.1.1
