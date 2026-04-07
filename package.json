@@ -28,7 +28,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=22.22.1"
+    "node": ">=22.22.2"
   },
   "repository": {
     "type": "git",
