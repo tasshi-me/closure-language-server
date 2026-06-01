@@ -28,8 +28,8 @@ importers:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.4.0)
       eslint-plugin-package-json:
-        specifier: ^1.1.0
-        version: 1.1.0(@types/estree@1.0.8)(eslint@10.4.0)
+        specifier: ^1.2.0
+        version: 1.2.0(@types/estree@1.0.8)(eslint@10.4.0)
       prettier:
         specifier: ^3.8.3
         version: 3.8.3
@@ -417,11 +417,26 @@ packages:
       '@types/estree':
         optional: true
 
-  eslint-plugin-package-json@1.1.0:
-    resolution: {integrity: sha512-yFBkYxHBlGKBi3Av17pCkJie+G3/DN/XEy1KGkHnTLXCY8eX7rF2kGiFn8a3N4iIGV4NJzKA0HdpINwVxczX0Q==}
+  eslint-json-compat-utils@0.2.3:
+    resolution: {integrity: sha512-RbBmDFyu7FqnjE8F0ZxPNzx5UaptdeS9Uu50r7A+D7s/+FCX+ybiyViYEgFUaFIFqSWJgZRTpL5d8Kanxxl2lQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@eslint/json': '*'
+      eslint: '*'
+      jsonc-eslint-parser: ^2.4.0 || ^3.0.0
+    peerDependenciesMeta:
+      '@eslint/json':
+        optional: true
+
+  eslint-plugin-package-json@1.2.0:
+    resolution: {integrity: sha512-3BszsD7XVddaUNbMfK+1lF1Qg8ck0nO3bNT/7IjXP8wrGzPThHZpkhm5UnbY1Nb/s3o6DUNgHI4aEqQV/t83fw==}
     engines: {node: ^22.22.2 || >=24.15.0}
     peerDependencies:
+      '@eslint/json': '>=1.0.0'
       eslint: '>=9.0.0'
+    peerDependenciesMeta:
+      '@eslint/json':
+        optional: true
 
   eslint-scope@9.1.2:
     resolution: {integrity: sha512-xS90H51cKw0jltxmvmHy2Iai1LIqrfbw57b79w/J7MfvDfkIkFZ+kj6zC3BjtUwh150HsSSdxXZcsuv72miDFQ==}
@@ -1293,7 +1308,13 @@ snapshots:
     optionalDependencies:
       '@types/estree': 1.0.8
 
-  eslint-plugin-package-json@1.1.0(@types/estree@1.0.8)(eslint@10.4.0):
+  eslint-json-compat-utils@0.2.3(eslint@10.4.0)(jsonc-eslint-parser@3.1.0):
+    dependencies:
+      eslint: 10.4.0
+      esquery: 1.7.0
+      jsonc-eslint-parser: 3.1.0
+
+  eslint-plugin-package-json@1.2.0(@types/estree@1.0.8)(eslint@10.4.0):
     dependencies:
       '@altano/repository-tools': 2.0.3
       change-case: 5.4.4
@@ -1301,6 +1322,7 @@ snapshots:
       detect-newline: 4.0.1
       eslint: 10.4.0
       eslint-fix-utils: 0.4.2(@types/estree@1.0.8)(eslint@10.4.0)
+      eslint-json-compat-utils: 0.2.3(eslint@10.4.0)(jsonc-eslint-parser@3.1.0)
       jsonc-eslint-parser: 3.1.0
       package-json-validator: 1.5.1
       semver: 7.7.4
