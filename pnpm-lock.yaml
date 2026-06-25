@@ -28,8 +28,8 @@ importers:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.5.0)
       eslint-plugin-package-json:
-        specifier: ^1.4.0
-        version: 1.4.0(@types/estree@1.0.8)(eslint@10.5.0)
+        specifier: ^1.5.0
+        version: 1.5.0(@types/estree@1.0.8)(eslint@10.5.0)
       prettier:
         specifier: ^3.8.4
         version: 3.8.4
@@ -428,8 +428,8 @@ packages:
       '@eslint/json':
         optional: true
 
-  eslint-plugin-package-json@1.4.0:
-    resolution: {integrity: sha512-eqDrb8U/0WYAwZ9tOmg3XTGZEC5TAfDSP21zBeQSNfeUj6pf+S3UKGlQxZ1yoJGbv1KyMF53GIloG/pxMvbK2g==}
+  eslint-plugin-package-json@1.5.0:
+    resolution: {integrity: sha512-KQkAdn+7I4vn1W4Va+V8M94RhcgZBvgrxMglDqgEhJgQDRUJ9RdtrEiHoe/84oVTIlp0jiPttLYwkExdvHYhZQ==}
     engines: {node: ^22.22.2 || >=24.15.0}
     peerDependencies:
       '@eslint/json': '>=1.0.0'
@@ -1314,7 +1314,7 @@ snapshots:
       esquery: 1.7.0
       jsonc-eslint-parser: 3.1.0
 
-  eslint-plugin-package-json@1.4.0(@types/estree@1.0.8)(eslint@10.5.0):
+  eslint-plugin-package-json@1.5.0(@types/estree@1.0.8)(eslint@10.5.0):
     dependencies:
       '@altano/repository-tools': 2.0.3
       change-case: 5.4.4
