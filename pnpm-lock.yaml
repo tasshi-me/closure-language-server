@@ -28,8 +28,8 @@ importers:
         specifier: ^10.1.8
         version: 10.1.8(eslint@10.8.0)
       eslint-plugin-package-json:
-        specifier: ^1.6.0
-        version: 1.6.0(@types/estree@1.0.8)(eslint@10.8.0)
+        specifier: ^1.6.1
+        version: 1.6.2(eslint@10.8.0)
       prettier:
         specifier: ^3.9.6
         version: 3.9.6
@@ -432,8 +432,8 @@ packages:
       '@eslint/json':
         optional: true
 
-  eslint-plugin-package-json@1.6.0:
-    resolution: {integrity: sha512-pROaDdg6qRV7RF6qebqoXIuPBagHI1jNklZBKP0IPikfL2hW25JZnBp4Q0tmdNJZx2LIh3rgdmcqqz4CIkSuCg==}
+  eslint-plugin-package-json@1.6.2:
+    resolution: {integrity: sha512-Zp0CdqXKQqB9luUYa/TOwnGq3VlLotx1UDflZOzEt3D5A5kxu3Lj1VFJ087jKudEhc+K3kF20XV/aKZAlDuslw==}
     engines: {node: ^22.22.2 || >=24.15.0}
     peerDependencies:
       '@eslint/json': '>=1.0.0'
@@ -1326,9 +1326,10 @@ snapshots:
       esquery: 1.7.0
       jsonc-eslint-parser: 3.1.0
 
-  eslint-plugin-package-json@1.6.0(@types/estree@1.0.8)(eslint@10.8.0):
+  eslint-plugin-package-json@1.6.2(eslint@10.8.0):
     dependencies:
       '@altano/repository-tools': 2.0.3
+      '@types/estree': 1.0.8
       change-case: 5.4.4
       detect-indent: 7.0.2
       detect-newline: 4.0.1
@@ -1340,8 +1341,6 @@ snapshots:
       semver: 7.7.4
       sort-object-keys: 2.1.0
       sort-package-json: 4.0.0
-    transitivePeerDependencies:
-      - '@types/estree'
 
   eslint-scope@9.1.2:
     dependencies:
