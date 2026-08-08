@@ -63,7 +63,7 @@
     "eslint-plugin-package-json": "^1.6.3",
     "prettier": "^3.9.6",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.65.0",
+    "typescript-eslint": "^8.66.0",
     "vitest": "^4.1.10"
   },
   "packageManager": "pnpm@10.34.5"
