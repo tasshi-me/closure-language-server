@@ -62,7 +62,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-package-json": "^1.7.1",
     "prettier": "^3.9.6",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "typescript-eslint": "^8.67.0",
     "vitest": "^4.1.11"
   },
