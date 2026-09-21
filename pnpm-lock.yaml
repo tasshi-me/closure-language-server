@@ -31,7 +31,7 @@ importers:
         specifier: ^1.8.1
         version: 1.8.1(eslint@10.10.0)
       prettier:
-        specifier: ^3.9.7
+        specifier: ^3.9.8
         version: 3.9.8
       typescript:
         specifier: ^5.9.3
